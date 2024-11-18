@@ -2,6 +2,7 @@ body {
   background-color: #2e2f33;
   font-family: 'Source Code Pro';
   font-size: 15px;
+  grid-template-rows: minmax(2.5rem, 12vmin) 1fr 5rem;
 }
 
 header {
@@ -75,14 +76,19 @@ nav ul {
   padding-left: 30px;
 }
 
+@media (max-width:1200px)
+{
+  #ascii{
+    padding-left: 25%;
+    font-size: max(0.2rem, 1vmin);
+  }
+}
+
 
 
 @media (max-width: 755px) {
   #intro {
     text-align: center;
-  }
-  #ascii{
-    display: none;
   }
 }
 
@@ -90,6 +96,9 @@ nav ul {
   #name{
     text-align: center;
     padding-left: 25%;
+  }
+  #intro{
+    margin-top: 1px;
   }
 }
 
@@ -101,6 +110,12 @@ nav ul {
   background-color: #71f0a9;
   border: none;
   border-radius: 30px;
+}
+
+#contact a{
+  text-decoration: none;
+  color: black;
+  display: inline-block;
 }
 
 #module-card{
