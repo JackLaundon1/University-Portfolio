@@ -141,3 +141,14 @@ object-fit: cover;
 .underline{
   text-decoration-line: underline;
 }
+
+#gigBtn{
+  border: 1px solid;
+  border-radius: 3px;
+  border-color: white;
+  background-color: black;
+}
+
+#gigBtn:hover{
+  background-color: #A9A9A9;
+}
