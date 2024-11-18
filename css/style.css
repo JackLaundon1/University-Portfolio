@@ -22,30 +22,42 @@ nav ul {
 
 .navbar-collapse {
   display: flex;
-  flex-direction: column;          /* Stacked on small screens */
-  justify-content: center;         /* Center horizontally */
-  align-items: center;             /* Center vertically */
-  width: 100%;                     /* Full width */
+  flex-direction: column;
+  /* Stacked on small screens */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  width: 100%;
+  /* Full width */
 }
 
 /* For larger screens: space out navbar items */
 @media (min-width: 577px) {
   .navbar-collapse {
-    flex-direction: row;           /* Align items in a row */
-    justify-content: space-between; /* Space out items */
-    align-items: center;           /* Center vertically */
+    flex-direction: row;
+    /* Align items in a row */
+    justify-content: space-between;
+    /* Space out items */
+    align-items: center;
+    /* Center vertically */
   }
 
   .navbar-nav {
     display: flex;
-    justify-content: space-between; /* Space out navbar items */
-    width: 100%;                    /* Take up full width */
-    margin: 0;                      /* Remove margins */
-    padding: 0;                     /* Remove padding */
+    justify-content: space-between;
+    /* Space out navbar items */
+    width: 100%;
+    /* Take up full width */
+    margin: 0;
+    /* Remove margins */
+    padding: 0;
+    /* Remove padding */
   }
 
   .navbar-nav .nav-item {
-    margin: 0 15px; /* Space out each nav item */
+    margin: 0 15px;
+    /* Space out each nav item */
   }
 }
 
@@ -60,12 +72,13 @@ nav ul {
 }
 
 .navbar a:hover {
-  color: #71f0a9;  /* Retain hover effect */
-}
-
-#heading{
   color: #71f0a9;
 }
+
+#heading {
+  color: #71f0a9;
+}
+
 .navbar-toggler-icon {
   color: #dedcdc;
 }
@@ -76,9 +89,8 @@ nav ul {
   padding-left: 30px;
 }
 
-@media (max-width:1200px)
-{
-  #ascii{
+@media (max-width:1200px) {
+  #ascii {
     padding-left: 25%;
     font-size: max(0.2rem, 1vmin);
   }
@@ -92,63 +104,109 @@ nav ul {
   }
 }
 
-@media (max-width: 575px){
-  #name{
+@media (max-width: 575px) {
+  #name {
     text-align: center;
     padding-left: 25%;
   }
-  #intro{
+
+  #intro {
     margin-top: 1px;
   }
-  #ascii{
+
+  #ascii {
     display: none;
   }
 }
 
-#card-header{
+#card-header {
   color: #71f0a9;
 }
 
-#contact{
+#contact {
   background-color: #71f0a9;
   border: none;
   border-radius: 30px;
 }
 
-#contact a{
+#contact a {
   text-decoration: none;
   color: black;
   display: inline-block;
 }
 
-#module-card{
+#module-card {
   color: #fff;
   background: linear-gradient(145deg, #2e2f33, #242529);
   border: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  height: 100%;
 }
 
-#module-card:hover{
-transform: translateY(-5%);
+#module-card:hover {
+  transform: translateY(-5%);
 }
 
 /* this makes all of the cards the same size without having to manually resize the images */
 .module-img-top {
-width: 100%;
-height: 30vh;
-object-fit: cover;
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
 }
 
-.underline{
+.underline {
   text-decoration-line: underline;
 }
 
-#gigBtn{
+#gigBtn {
   border: 1px solid;
   border-radius: 3px;
   border-color: white;
   background-color: black;
 }
 
-#gigBtn:hover{
+#gigBtn:hover {
   background-color: #A9A9A9;
+}
+
+#about-me {
+  text-align: left;
+}
+
+hr {
+  border: 0;
+  height: 5px;
+  background-color: black;
+}
+
+#footer {
+  list-style-type: none;
+  text-align: center;
+  color: #dedcdc;
+  font-family: 'Poppins';
+  padding-top: 30px;
+}
+
+footer a{
+  list-style-type: none;
+  text-decoration: none;
+  font-family: 'Poppins';
+  color: #dedcdc;
+}
+
+#footer a:hover{
+  color: #71f0a9;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.divider{
+  border: 0;
+  height: 2px;
+  background-color: #ccc;
+  width: 100vw;
 }
