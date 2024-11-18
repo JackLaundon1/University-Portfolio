@@ -182,6 +182,10 @@ hr {
 }
 
 #footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   list-style-type: none;
   text-align: center;
   color: #dedcdc;
@@ -189,11 +193,26 @@ hr {
   padding-top: 30px;
 }
 
-footer a{
+#footer .row{
+  width: 100%;
+}
+
+#footer ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#footer ul li {
+  margin-bottom: 5px; /* Add some space between links for better UX */
+}
+
+#footer a{
   list-style-type: none;
   text-decoration: none;
   font-family: 'Poppins';
   color: #dedcdc;
+  text-align: center;
 }
 
 #footer a:hover{
