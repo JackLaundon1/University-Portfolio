@@ -225,3 +225,15 @@ ul{
   background-color: #ccc;
   width: 100vw;
 }
+
+.modules{
+  color: #dedcdc;
+}
+
+.modules li{
+  list-style-type:circle
+}
+
+h3{
+  color: #71f0a9;
+}
