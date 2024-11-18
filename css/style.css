@@ -135,6 +135,11 @@ nav ul {
   display: inline-block;
 }
 
+.modules a{
+  text-decoration: none;
+  color: #71f0a9;
+}
+
 #module-card {
   color: #fff;
   background: linear-gradient(145deg, #2e2f33, #242529);
