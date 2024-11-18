@@ -182,37 +182,32 @@ hr {
 }
 
 #footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   list-style-type: none;
   text-align: center;
   color: #dedcdc;
   font-family: 'Poppins';
   padding-top: 30px;
+  margin: 0; /* Remove unwanted spacing around the footer */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column; /* Stack items vertically */
+  width: 100vw; /* Ensure footer spans the full width of the viewport */
+  box-sizing: border-box; /* Ensure padding does not overflow the container */
 }
 
-#footer .row{
-  width: 100%;
-}
-
-#footer ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-#footer ul li {
-  margin-bottom: 5px; /* Add some space between links for better UX */
-}
-
-#footer a{
+#footer a {
   list-style-type: none;
   text-decoration: none;
   font-family: 'Poppins';
   color: #dedcdc;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer a:hover {
+  color: #71f0a9;
 }
 
 #footer a:hover{
