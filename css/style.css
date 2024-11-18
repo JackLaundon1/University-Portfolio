@@ -204,6 +204,7 @@ hr {
   text-align: center;
   align-items: center;
   justify-content: center;
+  padding-right: 5%;
 }
 
 #footer a:hover {
